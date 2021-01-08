@@ -7,4 +7,7 @@ export class Vector {
             this[String.fromCharCode(i + 120)] = it
         })
     }
+    dot(vector) {
+        return (this.x * vector.x + this.y * vector.y + (this.z || 0) * (vector.z || 0))
+    }
 }
