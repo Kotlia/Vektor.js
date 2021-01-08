@@ -27,6 +27,7 @@ export class Vector {
     }
     setX(x) { this.x = x; return this }
     setY(y) { this.y = y; return this }
-    setZ(z) { this.z = z; return this }
-    setMagnitude(m) { this.magnitude = m; return this }
+    setZ(z) {
+        this.z = z; return this
+    }
 }
