@@ -84,6 +84,10 @@ export class Vector {
             this.dot(vector) / (this.magnitude * vector.magnitude)
         )
     }
+    proj(vector) {
+        if (typeof vector !== typeof this) { throw new DifferentDimentionError(`Different dimetion! ${this.constructor.name} cannot be projected on ${vector.constructor.name}`) }
+        return vector.scalarMultiply(this.dot(vector) / Math.pow(vector.magnitude, 2))
+    }
     setX(x) { this.x = x; return this }
     setY(y) { this.y = y; return this }
     setZ(z) {this.z = z; return this}
