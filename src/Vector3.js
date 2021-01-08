@@ -14,4 +14,11 @@ export class Vector3 extends Vector {
             this.x * vector3.y - this.y * vector3.x
         )
     }
+    get unit() {
+        return new Vector3(
+            this.x / this.magnitude,
+            this.y / this.magnitude,
+            this.z / this.magnitude
+        ).setMagnitude(1)
+    }
 }
