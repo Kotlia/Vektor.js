@@ -32,6 +32,26 @@ export class Vector {
         temp.magnitude = this.getMagnitude()
         return temp
     }
+    scalarMultiply(number) {
+        const temp = this
+        temp.setX(this.x * number)
+            .setY(this.y * number)
+        if (this.z) {
+            temp.setZ(this.z * number)
+        }
+        temp.magnitude = this.getMagnitude()
+        return temp
+    }
+    scalarDivide(number) {
+        const temp = this
+        temp.setX(this.x / number)
+            .setY(this.y / number)
+        if (this.z) {
+            temp.setZ(this.z / number)
+        }
+        temp.magnitude = this.getMagnitude()
+        return temp
+    }
     subtract(vector) {
         if (typeof vector !== typeof this) { throw new DifferentDimentionError(`Different dimetion! ${this.constructor.name} cannot be added with ${vector.constructor.name}`) }
         const temp = this
