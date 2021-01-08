@@ -86,6 +86,9 @@ export class Vector {
     isOrthogonal(vector) {
         return (!this.dot(vector))
     }
+    isCoplaner(firstVector, secondVector) {
+        return (this.scalarTriple(firstVector, secondVector) === 0)
+    }
     get unit() {
         const temp = this
         temp.setX(this.x / this.magnitude)
