@@ -83,6 +83,9 @@ export class Vector {
             return false
         }
     }
+    isOrthogonal(vector) {
+        return (!this.dot(vector))
+    }
     get unit() {
         const temp = this
         temp.setX(this.x / this.magnitude)
