@@ -2,7 +2,11 @@
   "name": "vektor.js",
   "version": "1.0.0",
   "main": "src/index.js",
+  "type": "module",
   "repository": "https://github.com/Kotlia/vektor.js.git",
   "author": "Shun Ueda <62182668+Kotlia@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "node test/test.js"
+  }
 }
