@@ -52,6 +52,9 @@ export class Vector {
         temp.magnitude = this.getMagnitude()
         return temp
     }
+    scalarTriple(firstVector, secondVector) {
+        return this.dot(firstVector.cross(secondVector))
+    }
     subtract(vector) {
         if (typeof vector !== typeof this) { throw new DifferentDimentionError(`Different dimetion! ${this.constructor.name} cannot be added with ${vector.constructor.name}`) }
         const temp = this
