@@ -15,7 +15,11 @@ export class Vector {
     dot(vector) {
         return (this.x * vector.x + this.y * vector.y + (this.z || 0) * (vector.z || 0))
     }
-
+    angleBetween(vector2) {
+        return Math.acos(
+            this.dot(vector2) / (this.magnitude * vector2.magnitude)
+        )
+    }
     setX(x) { this.x = x; return this }
     setY(y) { this.y = y; return this }
     setZ(z) { this.z = z; return this }
