@@ -66,6 +66,23 @@ export class Vector {
         temp.magnitude = this.getMagnitude()
         return temp
     }
+    isCollinear(vector) {
+        if (typeof vector !== typeof this) {
+            return false
+        }
+        const x = this.x / vector.x
+        const y = this.y / vector.y
+        if (x === y) {
+            if (this.z) {
+                const z = this.z / vector.z
+                return y === z;
+            } else {
+                return true
+            }
+        } else {
+            return false
+        }
+    }
     get unit() {
         const temp = this
         temp.setX(this.x / this.magnitude)
