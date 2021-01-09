@@ -8,5 +8,10 @@
   "license": "MIT",
   "scripts": {
     "test": "node test/test.js"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "sync-import": "^0.0.3",
+    "walk": "^2.3.14"
   }
 }
