@@ -1,4 +1,4 @@
-export class DifferentDimentionError extends Error {
+export class UnsupportedDimensionError extends Error {
     constructor(message) {
         super();
         this.message = message
