@@ -1,4 +1,4 @@
-export const getMagnitude = (thisArg) => {
+export const norm = (thisArg) => {
     return Math.sqrt(
         Math.pow(thisArg.x, 2) +
         Math.pow(thisArg.y, 2) +
