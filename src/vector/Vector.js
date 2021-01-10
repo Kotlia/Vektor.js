@@ -23,7 +23,7 @@ export class Vector {
      * Creates a vector from
      * 1. Terminal point (target)
      * 2. Points {@link Point}
-     * @param   { Number, Point }  elements
+     * @param   { Number | Point }  elements
      * @since   1.0
      */
     constructor(...elements)    {

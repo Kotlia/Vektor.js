@@ -1,9 +1,9 @@
 import { Point } from "./Point.js";
 
 /**
- * @extends Vector
- * Extension of Vector in 3D space.
- * @since 1.0
+ * @extends Point
+ * Extension of {@link Point} in 3D space.
+ * @since   1.0
  * @author  Kotlia (Shun Ueda)
  */
 export class Point3 extends Point {

@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "kotlia-me"
+  },
+  "targets": {
+    "kotlia-me": {
+      "hosting": {
+        "kotlia-me-vektorjs": [
+          "kotlia-me"
+        ],
+        "kotlia-me": [
+          "vektorjs-kotlia-me"
+        ]
+      }
+    }
+  }
+}

@@ -1,9 +1,3 @@
-/**
- * Vector addition method
- * @param { Vector } thisArg
- * @param { Vector } vector
- * @returns { Vector }
- */
 export const add = (thisArg, vector) => {
     const temp = thisArg
     temp.setX(thisArg.x + vector.x)
@@ -11,6 +5,6 @@ export const add = (thisArg, vector) => {
     if (thisArg.z) {
         temp.setZ(thisArg.z + vector.z)
     }
-    temp.magnitude = thisArg.getMagnitude()
+    temp.norm = thisArg.norm
     return temp
 }

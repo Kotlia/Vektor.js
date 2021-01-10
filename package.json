@@ -6,9 +6,14 @@
   "repository": "https://github.com/Kotlia/vektor.js.git",
   "author": "Shun Ueda <62182668+Kotlia@users.noreply.github.com>",
   "license": "MIT",
-  "scripts": {
-    "test": "node test/test.js"
+  "devDependencies": {
+    "docdash": "^1.2.0",
+    "jsdoc": "^3.6.6"
   },
-  "dependencies": {
+  "scripts": {
+    "docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+  },
+  "opts": {
+    "template": "node_modules/docdash"
   }
 }

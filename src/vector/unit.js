@@ -5,6 +5,6 @@ export const unit = (thisArg) => {
     if (thisArg.z) {
         temp.setZ(thisArg.z / thisArg.magnitude)
     }
-    temp.magnitude = thisArg.getMagnitude()
+    temp.magnitude = thisArg.norm
     return temp
 }
