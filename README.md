@@ -1,3 +1,3 @@
 # vektor.js
 
-Doc: vektorjs.kotlia.me
+Doc: https://vektorjs.kotlia.me
